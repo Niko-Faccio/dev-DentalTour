@@ -1,4 +1,38 @@
 @media screen and (max-width: 1024px) {
+    header {
+        .image-container {
+            margin-bottom: 58px;
+            .title {
+                left: 14%;
+
+                h1 {
+                    font-size: 48px;
+                }
+            }
+            
+            
+
+            .subtitle h2 {
+                font-size: 24px;
+                line-height: 1.1;
+                top: 43%;
+                left: 14%;
+            }
+
+            .subtitle h3 {
+                font-size: 20px;
+                top: 64%;
+                line-height: 1;
+                left: 14%;
+            }
+
+            .btn {
+                bottom: 5%;
+                right: 22%;
+                padding: 24px 24px;
+            }
+        }
+    }
 }
 
 
