@@ -121,3 +121,9 @@ p {
 h2.template-title {
     margin-bottom: 110px;
 }
+
+.services-row {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
