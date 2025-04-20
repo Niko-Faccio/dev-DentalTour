@@ -1,0 +1,77 @@
+
+/* The .image-container class needs to be applied to a div wrapped around the image you want to apply this filter to */
+header {
+    max-width: 1920px;
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+    background: #717478;
+    margin-bottom: 89px;
+    width: 100%;
+    max-width: 1920px;
+  }
+  .image-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: lighten;
+    background: #393a3d;
+    opacity: 1;
+  }
+  .image-container > img {
+    width: 100%;
+    height: auto;
+    -webkit-filter: blur(1.3px)  contrast(120%) grayscale(100%) hue-rotate(146deg) invert(0%) opacity(99%) saturate(100%) sepia(51%);
+            filter: blur(1.3px)  contrast(120%) grayscale(100%) hue-rotate(146deg) invert(0%) opacity(99%) saturate(100%) sepia(51%);
+    mix-blend-mode: multiply;
+  }
+  
+.title {
+    position: absolute;
+    top: 26%;
+    left: 20%;
+    max-width: 1134px;
+
+    h1 {
+        font-size: 84px;
+        color: $text-header-color;
+    }
+  }
+   
+
+.subtitle {
+  h2 {
+    position: absolute;
+    top: 47%;
+    left: 20%;
+    max-width: 1180px;
+    font-size: 38px;
+    color: $text-header-color;
+    background-color: #07af91;
+    line-height: 1.5;
+  }
+  h3 {
+    position: absolute;
+    top: 72%;
+    left: 20%;
+    font-size: 24px;
+    max-width: 816px;
+    color: $text-header-color;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 4%;
+    right: 30%;
+    padding: 26px 26px;
+  }
+}

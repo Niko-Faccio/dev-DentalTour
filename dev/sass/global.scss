@@ -19,18 +19,20 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1920px;
     min-height: 100vh;
-    //overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 section {
     max-width: 1161px;
-    margin: 0 auto;
     margin-bottom: 100px;
-    font-family: 'Montserrat';
-    font-size: 20px;
+}
 
+.container {
+    max-width: 1161px;
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1,
@@ -90,8 +92,23 @@ p {
 }
 
 .btn-primary {
-    background-color: #07AF91;
+    background-color: $primary-color;
+}
 
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0c8670;
+    transition: .5s;
+}
+
+.btn-secondary {
+    background-color: $secondary-color;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #0e6191;
+    transition: .5s;
 }
 
 h2.template-title {
