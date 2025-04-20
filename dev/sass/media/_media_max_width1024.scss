@@ -8,6 +8,11 @@
                 h1 {
                     font-size: 48px;
                 }
+
+                img {
+                    left: -88px;
+                    width: 28%;
+                }
             }
             
             
@@ -17,6 +22,7 @@
                 line-height: 1.1;
                 top: 43%;
                 left: 14%;
+                max-width: 536px;
             }
 
             .subtitle h3 {
@@ -26,7 +32,7 @@
                 left: 14%;
             }
 
-            .btn {
+            .btn-header {
                 bottom: 5%;
                 right: 22%;
                 padding: 24px 24px;

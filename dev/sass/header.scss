@@ -5,6 +5,16 @@ header {
     padding: 0 12px;
     margin-left: auto;
     margin-right: auto;
+
+    .btn-header {
+      position: absolute;
+      bottom: 9%;
+      right: 44%;
+
+      .btn {
+        padding: 26px 26px;
+      }
+    }
 }
 
 .image-container {
@@ -16,7 +26,7 @@ header {
     width: 100%;
     max-width: 1920px;
   }
-  .image-container::after {
+  .image-container::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -45,7 +55,15 @@ header {
         font-size: 84px;
         color: $text-header-color;
     }
+
+    img {
+      position: absolute;
+      left: -213px;
+      top: 17px;
+      width: 40%;
+      height: auto;
   }
+}
    
 
 .subtitle {
@@ -53,7 +71,7 @@ header {
     position: absolute;
     top: 47%;
     left: 20%;
-    max-width: 1180px;
+    max-width: 847px;
     font-size: 38px;
     color: $text-header-color;
     background-color: #07af91;
@@ -64,14 +82,9 @@ header {
     top: 72%;
     left: 20%;
     font-size: 24px;
-    max-width: 816px;
+    max-width: 614px;
     color: $text-header-color;
   }
-
-  .btn {
-    position: absolute;
-    bottom: 4%;
-    right: 30%;
-    padding: 26px 26px;
-  }
 }
+
+
